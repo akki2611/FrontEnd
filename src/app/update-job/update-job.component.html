@@ -1,0 +1,60 @@
+    <div class="col-md-6 offset-md-3">
+        <h3>Update Job</h3>
+        <form *ngIf="job" (ngSubmit) = "onSubmit()">
+            <div class="form-group">
+                <label> Location </label>
+                <input type="text" class="form-control" id="location"
+                    [(ngModel)] = "job.location" name="Location">
+            </div>
+            <div class="form-group">
+                <label> Campaign </label>
+                <input type="text" class="form-control" id="campaign"
+                    [(ngModel)] = "job.campaign" name="Campaign">
+            </div>
+            <div class="form-group">
+                <label> Minimum Work Experience </label>
+                <input type="text" class="form-control" id="min_Work_Exp"
+                    [(ngModel)] = "job.min_Work_Exp" name="Min_Work_Exp">
+            </div>
+            <div class="form-group">
+                <label> Employment Type	 </label>
+                <input type="text" class="form-control" id="employment_Type"
+                    [(ngModel)] = "job.employment_Type" name="Employment_Type">
+            </div>
+            <div class="form-group">
+                <label> Grade </label>
+                <input type="text" class="form-control" id="grade"
+                    [(ngModel)] = "job.grade" name="Grade">
+            </div>
+            <div class="form-group">
+                <label> Job Description </label>
+                <input type="text" class="form-control" id="job_Description"
+                    [(ngModel)] = "job.job_Description" name="Job_Description">
+            </div>
+            <div class="form-group">
+                <label> Job Title </label>
+                <input type="text" class="form-control" id="job_Title"
+                    [(ngModel)] = "job.job_Title" name="Job_Title">
+            </div>
+            <div class="form-group">
+                <label> Maximum Work Experience </label>
+                <input type="text" class="form-control" id="max_Work_Exp"
+                    [(ngModel)] = "job.max_Work_Exp" name="Max_Work_Exp">
+            </div>
+            <div class="form-group">
+                <label> No of Openings </label>
+                <input type="text" class="form-control" id="no_of_Openings"
+                    [(ngModel)] = "job.no_of_Openings" name="No_of_Openings">
+            </div>
+            <div class="form-group">
+                <label> Tentative Joining </label>
+                <input type="text" class="form-control" id="tentative_Joining"
+                    [(ngModel)] = "job.tentative_Joining" name="Tentative_Joining">
+            </div>
+        
+            <button class="btn btn-success" type="submit">Submit</button>
+            
+        
+        </form>
+        </div>
+        

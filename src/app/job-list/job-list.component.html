@@ -1,0 +1,40 @@
+<h2>Job List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Location</th>
+            <th>Campaign</th>
+            <th>Min_Work_Exp</th>
+            <th>Employment_Type</th>
+            <th>Grade</th>
+            <th>Job_Description</th>
+            <th>Job_Title</th>
+            <th>Max_Work_Exp</th>
+            <th>No_of_Openings</th>
+            <th>Tentative_Joining</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let job of jobs">
+            <td>{{job.id}}</td>
+            <td>{{job.location}}</td>
+            <td>{{job.campaign}}</td>
+            <td>{{job.min_Work_Exp}}</td>
+            <td>{{job.employment_Type}}</td>
+            <td>{{job.grade}}</td>
+            <td>{{job.job_Description}}</td>
+            <td>{{job.job_Title}}</td>
+            <td>{{job.max_Work_Exp}}</td>
+            <td>{{job.no_of_Openings}}</td>
+            <td>{{job.tentative_Joining}}</td>
+            <td>
+                <button (click)="updateJob(job.id)" class="btn btn-info" style="margin-bottom: 10px;">Update</button>
+                <button (click)="deleteJob(job.id)" class="btn btn-danger" style="margin-bottom: 10px;">Delete</button>
+                <button (click)="jobDetails(job.id)" class="btn btn-info" style="margin-bottom: 10px;">View</button>
+
+            </td>
+        </tr>   
+    </tbody>
+</table>
